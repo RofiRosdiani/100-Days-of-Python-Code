@@ -13,3 +13,4 @@ people = int(input("How many people to split the bill? "))
 calculate = total_bills * (tip / total_bills) / people
 calculate_decimal = "{:.2f}".format(calculate)
 print(f"Each person should pay: {calculate_decimal}")
+
