@@ -1,0 +1,20 @@
+# 🚨 Don't change the code below 👇
+year = int(input("Which year do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+calculate_1 = year % 4
+calculate_2 = year % 100
+calculate_3 = year % 400
+
+if(calculate_1 == 0 and calculate_2 !=0): 
+    print("Leap year.")
+elif(calculate_2 == 0 and calculate_3 == 0):
+    print("Leap year.") 
+else: 
+    print("Not leap year.")
+
+# Tahun kabisat: 1600, 1604, 1608, 1612, 1616...1684, 1688, 1692, 1696, 1704 (1700 tidak termasuk, mengapa?), 
+1708, 1712...1792, 1796, 1804 (1800 tidak termasuk), 1808, 1812...1892, 1896, 1904 (1900 tidak termasuk), 
+1908, 1912...1992, 1996, 2000 (2000 termasuk, mengapa?), 2004, 2008, 2012...2092, 2096, 2104 (2100 tidak termasuk)...
+2196, 2204...2296, 2304...2396, 2400 (mengapa?), 2404... dll.
