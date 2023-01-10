@@ -1,0 +1,31 @@
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+
+#Write your code below this line 👇
+#Change into lower case
+lower_case = name1.lower()
+lower_case2 = name2.lower()
+
+
+#Count true and love character of name 1 and name 2
+true_count = int(lower_case.count("t") + lower_case.count("r") + lower_case.count("u") + lower_case.count("e") + lower_case2.count("t") + lower_case2.count("r") + lower_case2.count("u") + lower_case2.count("e"))
+
+love_count = int(lower_case2.count("l") + lower_case2.count("o") + lower_case2.count("v") + lower_case2.count("e") + lower_case.count("l") + lower_case.count("o") + lower_case.count("v") + lower_case.count("e"))
+
+
+#Merge true and love in 1 sentence using str and int for if condition
+love_score = f"{true_count}{love_count}"
+love_score_int = int(love_score)
+
+
+#Result using if condition
+if love_score_int < 10 or love_score_int > 90:
+  print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif love_score_int >= 40 and love_score_int <= 50:
+  print(f"Your score is {love_score}, you are alright together.")
+else:
+  print(f"Your score is {love_score}.")
