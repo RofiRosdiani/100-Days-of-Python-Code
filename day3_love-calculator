@@ -7,14 +7,14 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 #Change into lower case
-lower_case = name1.lower()
-lower_case2 = name2.lower()
+combined = name1 + name2
+lower_case = combined.lower()
 
 
 #Count true and love character of name 1 and name 2
-true_count = int(lower_case.count("t") + lower_case.count("r") + lower_case.count("u") + lower_case.count("e") + lower_case2.count("t") + lower_case2.count("r") + lower_case2.count("u") + lower_case2.count("e"))
+true_count = int(lower_case.count("t") + lower_case.count("r") + lower_case.count("u") + lower_case.count("e") + lower_case.count("t") + lower_case.count("r") + lower_case.count("u") + lower_case.count("e"))
 
-love_count = int(lower_case2.count("l") + lower_case2.count("o") + lower_case2.count("v") + lower_case2.count("e") + lower_case.count("l") + lower_case.count("o") + lower_case.count("v") + lower_case.count("e"))
+love_count = int(lower_case.count("l") + lower_case.count("o") + lower_case.count("v") + lower_case.count("e") + lower_case.count("l") + lower_case.count("o") + lower_case.count("v") + lower_case.count("e"))
 
 
 #Merge true and love in 1 sentence using str and int for if condition
@@ -29,3 +29,38 @@ elif love_score_int >= 40 and love_score_int <= 50:
   print(f"Your score is {love_score}, you are alright together.")
 else:
   print(f"Your score is {love_score}.")
+  
+  
+-------------------------------------------------------------------------------------------------------------------------------
+#SOLUTION
+  
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+combined_names = name1 + name2
+lower_names = combined_names.lower()
+t = lower_names.count("t")
+r = lower_names.count("r")
+u = lower_names.count("u")
+e = lower_names.count("e")
+first_digit = t + r + u + e
+
+l = lower_names.count("l")
+o = lower_names.count("o")
+v = lower_names.count("v")
+e = lower_names.count("e")
+second_digit = l + o + v + e
+
+score = int(str(first_digit) + str(second_digit))
+
+if (score < 10) or (score > 90):
+  print(f"Your score is {score}, you go together like coke and mentos.")
+elif (score >= 40) and (score <= 50):
+  print(f"Your score is {score}, you are alright together.")
+else:
+  print(f"Your score is {score}.")
