@@ -5,13 +5,33 @@ for fruit in fruits:
   print(fruit + " Pie")
 print(fruits)
 
----------------------------------------------
+
 
 # OUTPUT
 Apple
 Apple Pie
 Peach
 Peach Pie
+Pear
+Pear Pie
+['Apple', 'Peach', 'Pear']
+
+======================================================
+#For Loop with Lists in another indentation
+fruits = ["Apple", "Peach", "Pear"]
+for fruit in fruits:
+  print(fruit)
+  print(fruit + " Pie")
+  print(fruits)
+  
+
+#OUTPUT
+Apple
+Apple Pie
+['Apple', 'Peach', 'Pear']
+Peach
+Peach Pie
+['Apple', 'Peach', 'Pear']
 Pear
 Pear Pie
 ['Apple', 'Peach', 'Pear']
