@@ -6,7 +6,6 @@ for fruit in fruits:
 print(fruits)
 
 
-
 # OUTPUT
 Apple
 Apple Pie
