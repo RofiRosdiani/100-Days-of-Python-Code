@@ -1,4 +1,4 @@
-#def digunakan untuk membuat definisi function yang akan digunakan berkali kali serta memudahkan membuat instruksi
+#def berfungsi untuk membuat definisi function yang akan digunakan berkali kali serta memudahkan membuat instruksi
 def turn_right():
     turn_left()
     turn_left()
