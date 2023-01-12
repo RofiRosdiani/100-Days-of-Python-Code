@@ -14,5 +14,15 @@ def jump():
     move()
     turn_left()
 
+#USING FOR LOOP
 for step in range(6):
     jump()
+    
+#OR
+#USING WHILE LOOP
+number_hurdles = 6
+while number_hurdles > 0:
+      jump()
+      number_hurdles -= 0  
+      print(number_hurdles)
+
